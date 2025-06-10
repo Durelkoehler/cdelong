@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votre Association - Accueil</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./cdel logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-container">
+        <a href="#hero" class="logo-link">
+          <img src="./cdel logo.png" class="logo" />
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">Présentation</a></li>
+          <li><a href="#services" class="nav-link">Domaines/Projets</a></li>
+          <li>
+            <a href="#associative-support" class="nav-link">Nos services</a>
+          </li>
+          <li><a href="#testimonials" class="nav-link">Actualité</a></li>
+          <li><a href="#contact" class="nav-link">Nous contacter</a></li>
+          <li><a href="#" class="donate-btn">Faire un don</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="theme-toggle-container">
+          <i
+            class="fas fa-sun theme-icon light-icon active"
+            id="light-mode-toggle"
+          ></i>
+          <i class="fas fa-moon theme-icon dark-icon" id="dark-mode-toggle"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-slider">
+          <div class="hero-slide active"></div>
+          <div class="hero-slide"></div>
+          <div class="hero-slide"></div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">Ensemble, Bâtissons un Futur Meilleur</h1>
+          <p class="hero-subtitle">
+            Nous œuvrons pour le développement communautaire, l'éducation et la
+            santé pour tous. Votre soutien fait la différence.
+          </p>
+          <div class="hero-cta">
+            <a href="#about" class="cta-button cta-primary"
+              >Découvrir notre mission <i class="fas fa-arrow-right"></i
+            ></a>
+            <a href="#contact" class="cta-button cta-secondary"
+              >Nous Contacter <i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-indicators">
+          <span class="indicator active" onclick="currentSlide(1)"></span>
+          <span class="indicator" onclick="currentSlide(2)"></span>
+          <span class="indicator" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Notre Engagement pour l'Avenir</h2>
+              <p>
+                Depuis notre fondation, nous nous sommes engagés à créer un
+                impact positif durable. Nous travaillons main dans la main avec
+                les communautés pour identifier leurs besoins et développer des
+                solutions adaptées et innovantes.
+              </p>
+              <p>
+                Chaque action que nous menons est guidée par nos valeurs de
+                solidarité, d'équité et de transparence. Nous croyons en un
+                monde où chacun a la chance de s'épanouir.
+              </p>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <span class="stat-number" data-target="2000">0+</span>
+                  <span class="stat-label"
+                    >Jeunes filles et femmes accompagnées</span
+                  >
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="100">0+</span>
+                  <span class="stat-label">Projets mis en oeuvre</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="10000">0+</span>
+                  <span class="stat-label">entreprises consolidés</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="6">0+</span>
+                  <span class="stat-label">Départements d'intervention</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <img
+                src="./Apres2-1024x768.jpg"
+                alt="Des personnes travaillant ensemble"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Nos Domaines d'Intervention</h2>
+            <p class="section-subtitle">
+              Nous offrons une gamme de services et de programmes pour soutenir
+              les communautés dans divers aspects de leur vie.
+            </p>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3 class="service-title">Éducation pour Tous</h3>
+              <p class="service-description">
+                Accès à l'éducation, soutien scolaire, bourses d'études et
+                programmes de formation professionnelle pour les jeunes.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+              <h3 class="service-title">Santé et Bien-être</h3>
+              <p class="service-description">
+                Campagnes de sensibilisation, accès aux soins, cliniques mobiles
+                et soutien nutritionnel pour les populations vulnérables.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-leaf"></i></div>
+              <h3 class="service-title">Développement Durable</h3>
+              <p class="service-description">
+                Projets d'agriculture durable, gestion des ressources naturelles
+                et initiatives écologiques.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-handshake"></i></div>
+              <h3 class="service-title">Autonomisation Économique</h3>
+              <p class="service-description">
+                Microcrédits, formations en entrepreneuriat et accompagnement
+                pour la création d'activités génératrices de revenus.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-home"></i></div>
+              <h3 class="service-title">Accès à l'Eau et à l'Assainissement</h3>
+              <p class="service-description">
+                Construction de puits, systèmes de filtration d'eau et
+                sensibilisation aux bonnes pratiques d'hygiène.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-users-cog"></i></div>
+              <h3 class="service-title">Renforcement des Capacités</h3>
+              <p class="service-description">
+                Ateliers de leadership, formations en gestion de projets et
+                développement des compétences communautaires.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="associative-support" id="associative-support">
+        <div class="container">
+          <div class="associative-content">
+            <h2>Soutien à la Vie Associative</h2>
+            <p>
+              Nous croyons au pouvoir des associations pour transformer les
+              communautés. Nous offrons un accompagnement sur mesure et des
+              ressources pour renforcer leurs capacités.
+            </p>
+            <div class="associative-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3 class="feature-title">Formations Spécialisées</h3>
+                <p class="feature-description">
+                  Formations en gestion administrative, levée de fonds,
+                  communication et gouvernance associative.
+                </p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3 class="feature-title">Accès aux Financements</h3>
+                <p class="feature-description">
+                  Aide à la rédaction de dossiers de subventions et mise en
+                  relation avec des partenaires financiers.
+                </p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <h3 class="feature-title">Mise en Réseau</h3>
+                <p class="feature-description">
+                  Création de plateformes d'échange et d'opportunités de
+                  collaboration entre les acteurs associatifs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Ce qu'ils disent de nous</h2>
+            <p class="section-subtitle">
+              Découvrez les témoignages de ceux qui ont bénéficié de nos actions
+              et de notre soutien.
+            </p>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "Grâce à cette association, j'ai pu reprendre mes études et
+                envisager un avenir meilleur. Leur soutien a été inestimable."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">J.D.</div>
+                <div class="author-info">
+                  <h4>Jeanne Dupont</h4>
+                  <p>Bénéficiaire, Programme Éducation</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "Leur programme de santé a transformé la vie de ma communauté.
+                Nous avons maintenant accès à des soins essentiels que nous
+                n'avions pas auparavant."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">A.K.</div>
+                <div class="author-info">
+                  <h4>Ahmed Koné</h4>
+                  <p>Chef de Communauté</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "En tant que bénévole, je suis fier de contribuer à une cause
+                aussi noble. L'équipe est dévouée et l'impact est visible sur le
+                terrain."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">M.S.</div>
+                <div class="author-info">
+                  <h4>Marie Sylla</h4>
+                  <p>Bénévole</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about-us">
+            <h3>À Propos</h3>
+            <p>
+              Nous sommes une association dédiée au développement communautaire,
+              à l'éducation et à la santé pour un avenir plus juste et
+              équitable.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section links">
+            <h3>Liens Rapides</h3>
+            <ul>
+              <li><a href="#about">Notre Mission</a></li>
+              <li><a href="#services">Nos Services</a></li>
+              <li><a href="#associative-support">Nos Projets</a></li>
+              <li><a href="#">Faire un Don</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact-info">
+            <h3>Contactez-nous</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Rue de l'Espoir, Ville,
+              Pays
+            </p>
+            <p><i class="fas fa-phone"></i> +229 97 00 00 00</p>
+            <p><i class="fas fa-envelope"></i> info@votrenom.org</p>
+          </div>
+          <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <p>Restez informé de nos dernières actualités et projets.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Votre email" required />
+              <button type="submit" class="cta-button cta-primary">
+                S'abonner
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2025 Votre Association. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
